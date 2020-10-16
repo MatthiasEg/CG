@@ -34,7 +34,7 @@ function startup() {
     initGL();
     window.addEventListener('keyup', onKeyup, false);
     window.addEventListener('keydown', onKeydown, false);
-    draw();
+    drawAnimated();
 }
 
 /**
@@ -43,12 +43,12 @@ function startup() {
 function initGL() {
     "use strict";
     ctx.shaderProgram = loadAndCompileShaders(gl, 'VertexShader.glsl', 'FragmentShader.glsl');
+
     setUpAttributesAndUniforms();
     setUpBuffers();
-
     setupWorld();
 
-    gl.clearColor(1, 0.1, 0.1, 1);
+    gl.clearColor(0.1, 0.1, 0.1, 1);
 }
 
 /**
@@ -93,6 +93,115 @@ function drawShape(position, size) {
     gl.uniformMatrix3fv(ctx.uModelMatId, false, modelMat);
 }
 
+let ball = {
+    xPosition: 0,
+    yPosition: 0,
+    lastXPosition: 1,
+    lastYPosition: 2,
+    sizeX: 10,
+    sizeY: 10,
+    xDirection: 'right', //left or right
+    yDirection: 'upside', //upside or downside
+    xSpeed: 3,
+    ySpeed: 3,
+    changeXDirection: () => ball.xDirection === 'left' ? ball.xDirection = 'right' : ball.xDirection = 'left',
+    changeYDirection: () => ball.yDirection === 'upside' ? ball.yDirection = 'downside' : ball.yDirection = 'upside',
+
+
+};
+let player = {
+    xPosition: 350,
+    yPosition: 0,
+    sizeX: 10,
+    sizeY: 100,
+};
+let bot = {
+    xPosition: -350,
+    yPosition: 0,
+    sizeX: 10,
+    sizeY: 100,
+};
+
+const adjustComputerPlayerPosition = () => {
+    bot.yPosition = ball.yPosition
+};
+
+
+function moveBall() {
+    if (ball.xDirection === 'left') {
+        ball.yDirection === 'upside' ? ball.yPosition += ball.ySpeed : ball.yPosition -= ball.ySpeed;
+        ball.xPosition -= ball.xSpeed;
+    } else {
+        ball.yDirection === 'upside' ? ball.yPosition += ball.ySpeed : ball.yPosition -= ball.ySpeed;
+        ball.xPosition += ball.xSpeed;
+    }
+}
+
+const isBallBetweenTopAndBottom = () => ball.yPosition <= 400 && ball.yPosition >= -400;
+
+
+function ballTouchesPaddles() {
+    if (ball.xPosition <= bot.xPosition + bot.sizeX / 2 && ball.xPosition >= bot.xPosition - bot.sizeX / 2) {
+        if (ball.yPosition < bot.yPosition + bot.sizeY / 2 && ball.yPosition > bot.yPosition - bot.sizeY / 2) {
+            ball.xSpeed += 1;
+            ball.ySpeed += 1;
+            return true
+        }
+    } else if (ball.xPosition >= player.xPosition - player.sizeX / 2 && ball.xPosition <= player.xPosition + player.sizeX / 2) {
+        if (ball.yPosition < player.yPosition + player.sizeY / 2 && ball.yPosition > player.yPosition - player.sizeY / 2) {
+            ball.xSpeed += 1;
+            ball.ySpeed += 1;
+            return true
+        }
+    }
+    return false
+}
+
+
+function resetGame() {
+    ball.xPosition = 0;
+    ball.yPosition = 0;
+    ball.xSpeed = 1;
+    ball.ySpeed = 1;
+
+}
+
+function isBallOut() {
+    return !(ball.xPosition < 400 && ball.xPosition > -400)
+}
+
+function drawAnimated(timestampInMillis) {
+    if (timestampInMillis) {
+        //calculate time since last call
+        // move or change objects
+        // const timeSinceLastCall = window.performance.now() - timestampInMillis;
+        if (isBallBetweenTopAndBottom()) {
+            console.log('between');
+        } else {
+            ball.changeYDirection()
+        }
+        if (ballTouchesPaddles()) {
+            ball.changeXDirection();
+        }
+        if (isBallOut()) {
+            resetGame();
+        }
+
+        moveBall();
+        adjustComputerPlayerPosition();
+
+        if (isDown(key.UP)) {
+            player.yPosition += 15;
+        } else if (isDown((key.DOWN))) {
+            player.yPosition -= 15;
+        }
+    }
+
+    draw();
+    //request the next frame
+    window.requestAnimationFrame(drawAnimated)
+}
+
 /**
  * Draw the scene.
  */
@@ -107,20 +216,21 @@ function draw() {
     // color of shapes
     gl.uniform4f(ctx.uColorId, 1, 1, 1, 1);
 
-    //left player
-    drawShape([-350, 0], [10, 100]);
+    //bot paddle
+    drawShape([bot.xPosition, bot.yPosition], [bot.sizeX, bot.sizeY]);
     gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
 
     // middle line
-    drawShape([0,0], [3,1000]);
+    drawShape([0, 0], [3, 1000]);
     gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
 
     // ball
-    drawShape([20,20], [10,10]);
+    drawShape([ball.xPosition, ball.yPosition], [ball.sizeX, ball.sizeY]);
     gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
 
-    // right player
-    drawShape([350,0], [10,100]);
+    // right player paddle
+
+    drawShape([player.xPosition, player.yPosition], [player.sizeX, player.sizeY]);
     gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
 }
 

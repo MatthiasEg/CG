@@ -4102,9 +4102,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * axes. Each axis is a vec3 and is expected to be unit length and
 	 * perpendicular to all other specified axes.
 	 *
-	 * @param {vec3} view  the vector representing the viewing direction
-	 * @param {vec3} right the vector representing the local "right" direction
-	 * @param {vec3} up    the vector representing the local "up" direction
+	 * @param {vec3} view  the vector representing the viewing xDirection
+	 * @param {vec3} right the vector representing the local "right" xDirection
+	 * @param {vec3} up    the vector representing the local "up" xDirection
 	 * @returns {quat} out
 	 */
 	quat.setAxes = (function() {
