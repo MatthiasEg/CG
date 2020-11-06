@@ -2,28 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6cfce99-6637-4457-9735-d4f8bc4f1702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/Exercise4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/Exercise4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/FragmentShader.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/VertexShader.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/gl-matrix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/shaderUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/webgl-debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW05/webgl_start/wireFrameCubeEmpty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW05/lena512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/Exercise6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/Exercise6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/FragmentShaderLightingExercise.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/VertexShader.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/gl-matrix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/lena512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/shaderUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/solidCubeWithNormals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/solidSphere.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/webgl-debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW08/wireFrameCube.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CG.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW01/webgl_start/webgl-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW01/webgl_start/webgl-debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW02/webgl-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW02/webgl-debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/.idea/solutionExercise2_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/FragmentShader.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/Pong.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/VertexShader.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/gl-matrix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/pong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/shaderUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SW03/pong_start/webgl-debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/Exercise4.html" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/Exercise5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/Exercise4.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/Exercise5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/FragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/FragmentShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/VertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/VertexShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/gl-matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/gl-matrix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/shaderUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/shaderUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/webgl-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/webgl-debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SW05/webgl_start/wireFrameCubeEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/SW05/ColorCube.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,29 +39,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SW08/Exercise6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SW08/solidSphere.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!block;n#defineVerticesAndTexture#0;n#!!block;n#SolidSphere#0" />
+                <element signature="n#!!block;n#defineIndices#0;n#!!block;n#SolidSphere#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SW05/webgl_start/Exercise4.js">
+        <entry file="file://$PROJECT_DIR$/SW08/Exercise6.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SW05/webgl_start/wireFrameCubeEmpty.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1145">
-              <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SW05/webgl_start/Exercise4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +80,6 @@
       <find>var ct</find>
       <find>setupA</find>
       <find>uColorId</find>
-      <find>color</find>
       <find>drawA</find>
       <find>element</find>
       <find>new wire</find>
@@ -81,6 +87,16 @@
       <find>texture</find>
       <find>wirefr</find>
       <find>look</find>
+      <find>avertexcolor</find>
+      <find>gl.clear</find>
+      <find>ColorBu</find>
+      <find>FragmentSha</find>
+      <find>SolidS</find>
+      <find>draw</find>
+      <find>solidSphere.cdra</find>
+      <find>new Soli</find>
+      <find>color</find>
+      <find>lightColor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,21 +122,33 @@
         <option value="$PROJECT_DIR$/SW05/webgl_start/Exercise4.html" />
         <option value="$PROJECT_DIR$/SW05/webgl_start/wireFrameCubeEmpty.js" />
         <option value="$PROJECT_DIR$/SW05/webgl_start/Exercise4.js" />
+        <option value="$PROJECT_DIR$/SW05/Exercise5.html" />
+        <option value="$PROJECT_DIR$/SW05/wireFrameCubeEmpty.js" />
+        <option value="$PROJECT_DIR$/SW05/ColorCube.js" />
+        <option value="$PROJECT_DIR$/SW05/Exercise5.js" />
+        <option value="$PROJECT_DIR$/SW08/solidCubeWithNormals.js" />
+        <option value="$PROJECT_DIR$/SW08/VertexShader.glsl" />
+        <option value="$PROJECT_DIR$/SW05/FragmentShader.glsl" />
+        <option value="$PROJECT_DIR$/SW08/FragmentShaderLightingExercise.glsl" />
+        <option value="$PROJECT_DIR$/SW08/WireFrameCube.js" />
+        <option value="$PROJECT_DIR$/SW08/Exercise6.html" />
+        <option value="$PROJECT_DIR$/SW08/Exercise6.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1734" />
+    <option name="width" value="1733" />
     <option name="height" value="1407" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,60 +159,38 @@
             <path>
               <item name="CG" type="b2602c69:ProjectViewProjectNode" />
               <item name="CG" type="462c0819:PsiDirectoryNode" />
-              <item name="SW01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CG" type="462c0819:PsiDirectoryNode" />
-              <item name="SW01" type="462c0819:PsiDirectoryNode" />
-              <item name="webgl_start" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CG" type="462c0819:PsiDirectoryNode" />
-              <item name="SW02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CG" type="462c0819:PsiDirectoryNode" />
-              <item name="SW03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CG" type="462c0819:PsiDirectoryNode" />
-              <item name="SW03" type="462c0819:PsiDirectoryNode" />
-              <item name="Pong_Matthias_Egli_CG_HSLU_HS20" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CG" type="462c0819:PsiDirectoryNode" />
               <item name="SW05" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CG" type="b2602c69:ProjectViewProjectNode" />
               <item name="CG" type="462c0819:PsiDirectoryNode" />
-              <item name="SW05" type="462c0819:PsiDirectoryNode" />
-              <item name="webgl_start" type="462c0819:PsiDirectoryNode" />
+              <item name="SW08" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SW05/webgl_start" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SW08" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\matth\Documents\CG\SW05\webgl_start" />
+      <recent name="C:\Users\matth\Documents\CG\SW08" />
       <recent name="C:\Users\matth\Documents\CG\SW05" />
+      <recent name="C:\Users\matth\Documents\CG\SW05\webgl_start" />
       <recent name="C:\Users\matth\Documents\CG\SW02" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matth\Documents\CG\SW05" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,29 +205,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Exercise4.html">
+  <component name="RunManager" selected="JavaScript Debug.Exercise6.html">
+    <configuration name="Exercise1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CG/SW01/webgl_start/Exercise1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Exercise2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CG/SW02/Exercise2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise4.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CG/SW05/webgl_start/Exercise4.html" useBuiltInWebServerPort="true">
+    <configuration name="Exercise5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CG/SW05/Exercise5.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="pong.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CG/SW03/pong_start/pong.html" useBuiltInWebServerPort="true">
+    <configuration name="Exercise6.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CG/SW08/Exercise6.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Exercise4.js" working-dir="$PROJECT_DIR$/SW05/webgl_start">
-      <method v="2" />
-    </configuration>
-    <configuration name="Pong.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Pong.js" working-dir="$PROJECT_DIR$/SW03/pong_start">
+    <configuration name="Exercise5.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/SW05/Exercise5.js" working-dir="$PROJECT_DIR$/SW05/webgl_start">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Exercise4.html" />
-        <item itemvalue="Node.js.Exercise4.js" />
+        <item itemvalue="JavaScript Debug.Exercise6.html" />
+        <item itemvalue="JavaScript Debug.Exercise5.html" />
+        <item itemvalue="JavaScript Debug.Exercise1.html" />
         <item itemvalue="JavaScript Debug.Exercise2.html" />
-        <item itemvalue="JavaScript Debug.pong.html" />
-        <item itemvalue="Node.js.Pong.js" />
+        <item itemvalue="Node.js.Exercise5.js" />
       </list>
     </recent_temporary>
   </component>
@@ -239,17 +245,19 @@
       <workItem from="1600448550165" duration="2091000" />
       <workItem from="1601054834975" duration="5202000" />
       <workItem from="1601656699870" duration="8583000" />
+      <workItem from="1604080316099" duration="3173000" />
+      <workItem from="1604683642568" duration="4930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23467000" />
+    <option name="totallyTimeSpent" value="31570000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1734" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1733" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8076923" visible="true" weight="0.24397591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8076923" visible="true" weight="0.30687204" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.1923077" side_tool="true" weight="0.24397591" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,7 +269,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.1589085" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20432693" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -293,53 +301,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SW03/pong_start/pong.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW02/VertexShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW03/pong_start/shaderUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW03/pong_start/FragmentShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW03/pong_start/VertexShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW03/pong_start/Pong.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SW03/pong_start/pong.html" />
+    <entry file="file://$PROJECT_DIR$/SW03/pong_start/shaderUtils.js" />
+    <entry file="file://$PROJECT_DIR$/SW03/pong_start/FragmentShader.glsl" />
+    <entry file="file://$PROJECT_DIR$/SW03/pong_start/VertexShader.glsl" />
+    <entry file="file://$PROJECT_DIR$/SW03/pong_start/Pong.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -356,20 +322,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SW03/Pong_Matthias_Egli_CG_HSLU_HS20/FragmentShader.glsl">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW02/Exercise2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="118" column="20" lean-forward="true" selection-end-line="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SW02/Exercise2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SW02/FragmentShader.glsl">
       <provider selected="true" editor-type-id="text-editor">
@@ -388,38 +340,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SW05/webgl_start/FragmentShader.glsl">
+    <entry file="file://$PROJECT_DIR$/SW02/Exercise2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="286">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SW05/webgl_start/VertexShader.glsl">
+    <entry file="file://$PROJECT_DIR$/SW02/VertexShader.glsl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SW05/webgl_start/Exercise4.html">
+    <entry file="file://$PROJECT_DIR$/SW05/VertexShader.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW05/ColorCube.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW05/Exercise5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW02/Exercise2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="55" column="78" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW05/Exercise5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SW05/webgl_start/wireFrameCubeEmpty.js">
+    <entry file="file://$PROJECT_DIR$/SW08/webgl-debug.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/shaderUtils.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/gl-matrix.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW05/FragmentShader.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SW05/webgl_start/Exercise4.js">
+    <entry file="file://$PROJECT_DIR$/SW08/wireFrameCube.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="1716">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/FragmentShaderLightingExercise.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/solidCubeWithNormals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/Exercise6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/solidSphere.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#defineVerticesAndTexture#0;n#!!block;n#SolidSphere#0" />
+            <element signature="n#!!block;n#defineIndices#0;n#!!block;n#SolidSphere#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/VertexShader.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SW08/Exercise6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
