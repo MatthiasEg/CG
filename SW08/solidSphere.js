@@ -8,10 +8,9 @@
  * @param gl the gl object for which to define the sphere
  * @param latitudeBands the number of bands along the latitude direction
  * @param longitudeBands the number of bands along the longitude direction
- * @param color the color of the sphere
  *
  */
-function SolidSphere(gl, latitudeBands, longitudeBands, color) {
+function SolidSphere(gl, latitudeBands, longitudeBands) {
 
     function defineVerticesAndTexture(latitudeBands, longitudeBands) {
         "use strict";
@@ -77,7 +76,7 @@ function SolidSphere(gl, latitudeBands, longitudeBands, color) {
         return indices;
     }
 
-    function draw(gl, aVertexPositionId, aVertexColorId, aVertexNormalId) {
+    function drawWithColor(gl, aVertexPositionId, aVertexColorId, aVertexNormalId,  color) {
         "use strict";
 
         // position
@@ -87,7 +86,7 @@ function SolidSphere(gl, latitudeBands, longitudeBands, color) {
 
         // color is directly specified as an attribute here, as it is valid for the whole object
         gl.disableVertexAttribArray(aVertexColorId);
-        gl.vertexAttrib3f(aVertexColorId, this.color[0], this.color[1], this.color[2]);
+        gl.vertexAttrib3f(aVertexColorId, color[0], color[1], color[2]);
 
         // normal
         gl.bindBuffer(gl.ARRAY_BUFFER, this.bufferNormals);
@@ -97,17 +96,12 @@ function SolidSphere(gl, latitudeBands, longitudeBands, color) {
         // elements
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, sphere.bufferIndices);
         gl.drawElements(gl.TRIANGLES, this.numberOfTriangles*3 ,gl.UNSIGNED_SHORT, 0);
-
-        // disable attributes
-        gl.disableVertexAttribArray(aVertexPositionId);
-        gl.disableVertexAttribArray(aVertexNormalId);
     }
 
     var verticesAndTextures = defineVerticesAndTexture(latitudeBands, longitudeBands);
     var indices = defineIndices(latitudeBands, longitudeBands);
 
     var sphere = {};
-
     sphere.bufferVertices  = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, sphere.bufferVertices);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verticesAndTextures.vertices), gl.STATIC_DRAW);
@@ -126,7 +120,6 @@ function SolidSphere(gl, latitudeBands, longitudeBands, color) {
     gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
 
     sphere.numberOfTriangles = latitudeBands*longitudeBands*2;
-    sphere.color = color;
-    sphere.draw = draw;
+    sphere.drawWithColor = drawWithColor;
     return sphere;
 }

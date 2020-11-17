@@ -46,7 +46,7 @@ var scene = {
     nearPlane: 0.1,
     farPlane: 30.0,
     fov: 40,
-    lightPosition: [3, 3, 3],
+    lightPosition: [-20, 20, 0],
     lightColor: [1, 1, 1],
     rotateObjects: true,
     angle: 0,
@@ -69,7 +69,7 @@ function startup() {
     gl = createGLContext(canvas);
     initGL();
     loadTexture();
-    window.requestAnimationFrame(drawAnimated);
+    window.requestAnimationFrame (drawAnimated);
 }
 
 /**
@@ -77,7 +77,7 @@ function startup() {
  */
 function initGL() {
     "use strict";
-    ctx.shaderProgram = loadAndCompileShaders(gl, 'VertexShader.glsl', 'FragmentShaderLightingExercise.glsl');
+    ctx.shaderProgram = loadAndCompileShaders(gl, 'VertexShader.glsl', 'FragmentShaderLighting.glsl');
     setUpAttributesAndUniforms();
     defineObjects();
 
@@ -112,7 +112,7 @@ function loadTexture() {
     var image = new Image();
     // create a texture object
     textures.textureObject0 = gl.createTexture();
-    image.onload = function () {
+    image.onload = function() {
         console.log("Image loaded");
         initTexture(image, textures.textureObject0);
     };
@@ -129,13 +129,13 @@ function defineObjects() {
         [1.0, 1.0, 0.0],
         [0.0, 1.0, 1.0],
         [1.0, 0.0, 1.0]);
-    drawingObjects.solidSphere = new SolidSphere(gl, 40, 40, [0.1, 0.1, 0.1]);
+    drawingObjects.solidSphere = new SolidSphere(gl, 40, 40);
 }
 
 /**
  * Setup all the attribute and uniform variables
  */
-function setUpAttributesAndUniforms() {
+function setUpAttributesAndUniforms(){
     "use strict";
     ctx.aVertexPositionId = gl.getAttribLocation(ctx.shaderProgram, "aVertexPosition");
     ctx.aVertexColorId = gl.getAttribLocation(ctx.shaderProgram, "aVertexColor");
@@ -184,7 +184,7 @@ function draw() {
 
     // tell the fragment shader to use the texture
     gl.uniform1i(ctx.uEnableTextureId, 1);
-    //
+
     gl.uniformMatrix3fv(ctx.uTextureMatrixId, false, textureMatrix);
 
 
@@ -220,13 +220,12 @@ function draw() {
     gl.uniformMatrix4fv(ctx.uModelViewMatrixId, false, modelViewMatrix);
     mat3.normalFromMat4(normalMatrix, modelViewMatrix);
     gl.uniformMatrix3fv(ctx.uNormalMatrixId, false, normalMatrix);
-    drawingObjects.solidSphere.draw(gl, ctx.aVertexPositionId, ctx.aVertexColorId, ctx.aVertexNormalId, [1, 0, 0]);
+    drawingObjects.solidSphere.drawWithColor(gl, ctx.aVertexPositionId, ctx.aVertexColorId, ctx.aVertexNormalId, [1, 0, 0]);
 }
 
 var first = true;
 var lastTimeStamp = 0;
-
-function drawAnimated(timeStamp) {
+function drawAnimated ( timeStamp ) {
     var timeElapsed = 0;
     if (first) {
         lastTimeStamp = timeStamp;
@@ -238,10 +237,10 @@ function drawAnimated(timeStamp) {
     // calculate time since last call
     // move or change objects
     scene.angle += timeElapsed * scene.angularSpeed;
-    if (scene.angle > 2.0 * Math.PI) {
-        scene.angle -= 2.0 * Math.PI;
+    if (scene.angle > 2.0*Math.PI) {
+        scene.angle -= 2.0*Math.PI;
     }
-    draw();
+    draw ();
     // request the next frame
-    window.requestAnimationFrame(drawAnimated);
+    window.requestAnimationFrame (drawAnimated);
 }

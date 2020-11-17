@@ -12,7 +12,7 @@ varying vec2 vTextureCoord;
 varying vec3 vNormalEye;
 varying vec3 vVertexPositionEye3;
 
-//hier ist schon fertig so für aufgabe 6
+// File was already given
 
 void main() {
     // calculate the vertex position in eye Coordinate
