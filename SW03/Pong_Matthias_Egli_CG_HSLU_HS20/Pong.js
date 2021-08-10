@@ -216,8 +216,12 @@ function draw() {
     // color of shapes
     gl.uniform4f(ctx.uColorId, 1, 1, 1, 1);
 
-    //bot paddle
-    drawShape([bot.xPosition, bot.yPosition], [bot.sizeX, bot.sizeY]);
+    //left player paddle
+    drawShape([-350, 0], [10, 100]); //sizeX
+    gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
+
+    // right player paddle
+    drawShape([player.xPosition, player.yPosition], [player.sizeX, player.sizeY]);
     gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
 
     // middle line
@@ -226,11 +230,6 @@ function draw() {
 
     // ball
     drawShape([ball.xPosition, ball.yPosition], [ball.sizeX, ball.sizeY]);
-    gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
-
-    // right player paddle
-
-    drawShape([player.xPosition, player.yPosition], [player.sizeX, player.sizeY]);
     gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
 }
 

@@ -44,7 +44,7 @@ function initGL() {
     ctx.shaderProgram = loadAndCompileShaders(gl, 'VertexShader.glsl', 'FragmentShader.glsl');
     setUpAttributesAndUniforms();
     setUpBuffers();
-    gl.clearColor(1, 0, 0, 1);
+    gl.clearColor(0.5, 0.5, 0.5, 1);
 }
 
 /**
@@ -115,10 +115,6 @@ function draw() {
     gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.buffer);
     gl.vertexAttribPointer(ctx.aVertexPositionId, 2, gl.FLOAT, false, 0, 0);
     gl.enableVertexAttribArray(ctx.aVertexPositionId);
-
-    gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.colorBuffer);
-    gl.vertexAttribPointer(ctx.aVertexColorId, 4, gl.FLOAT, false, 0, 0);
-    gl.enableVertexAttribArray(ctx.aVertexColorId);
 
     gl.activeTexture(gl.TEXTURE0);
     gl.bindTexture(gl.TEXTURE_2D, lennaTxt.textureObj);
